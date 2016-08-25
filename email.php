@@ -8,13 +8,10 @@ $message = $_POST['message'];
 $expediteur = 'From: adressebidon@gmail.com'."\r\n" .
               'Reply-To: adresse@example.com'."\r\n" .
               'X-Mailer: PHP/' . phpversion();
-$fichier = $_POST['fichier'];
-
-//if(isset($_FILES['fichier'])) {
-    
 //}
 
 mail ($email, $identite, $objet, $message, $expediteur);
-echo "Votre message à bien été envoyé.";
+// echo "Votre message à bien été envoyé.";
+header('Location: confirmation.php');
     
 ?>
