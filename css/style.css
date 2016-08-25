@@ -3,6 +3,7 @@ h2 {
     font-size: 25px;
     color: darkslategrey; 
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 label {
@@ -18,4 +19,7 @@ body {
     background-color: ghostwhite;
 }
 
-im
+img {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
