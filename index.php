@@ -22,26 +22,26 @@
             
            <div class="form-group col-md-7 col-sm-7">
                 <label for="usr">Nom Prénom :</label>
-                <input type="text" class="form-control" id="usr" placeholder="Nom et prénom" name="idendite">
+                <input type="text" class="form-control" id="usr" placeholder="Nom et prénom" name="idendite" maxlength="50">
             </div>
 
             <div class="form-group col-md-7  col-sm-7">
                 <label for="email">E-mail :</label>
-                <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
+                <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" maxlength="50">
             </div>
 
             <div class="form-group col-md-7  col-sm-7">
                 <label for="objet">Objet :</label>
-                <input type="text" class="form-control" id="objet" placeholder="objet" name="objet">
+                <input type="text" class="form-control" id="objet" placeholder="objet" name="objet" maxlength="50">
             </div>
 
             <div class="form-group col-sm-offset-4 col-md-7  col-sm-7">
                 <label for="message">Message :</label>
-                <textarea class="form-control" name="message" id="comment" cols="30" rows="8" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" id="comment" cols="30" rows="8" maxlength="750" placeholder="Message"></textarea>
             </div>
 
             <div class="form-group col-md-offset-4 col-sm-offset-4 col-md-7  col-sm-7">
-                <input id="input-repl-2" type="file" class="file-loading" accept="image/*">
+                <input id="input-repl-2" type="file" class="file-loading" accept="image/*" name="fichier">
             </div>
 
             <div class="form-group col-md-offset-4  col-sm-offset-4 col-md-7 col-sm-7">

@@ -1,12 +1,20 @@
 <?php
 
-//$identite = $_POST['idendite'];
+//$headers .= 'Content-Type: multipart/mixed;boundary='.$boundary."\r\n";
 $email = $_POST['email'];
+$identite = $_POST['idendite'];
 $objet = $_POST['objet'];
 $message = $_POST['message'];
-$expediteur = 'from : adressebidon@gmail.com';
+$expediteur = 'From: adressebidon@gmail.com'."\r\n" .
+              'Reply-To: adresse@example.com'."\r\n" .
+              'X-Mailer: PHP/' . phpversion();
+$fichier = $_POST['fichier'];
 
-mail ($email, $objet, $message, $expediteur);
+//if(isset($_FILES['fichier'])) {
+    
+//}
+
+mail ($email, $identite, $objet, $message, $expediteur);
 echo "Votre message à bien été envoyé.";
     
 ?>
