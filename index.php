@@ -37,7 +37,7 @@
 
             <div class="form-group col-sm-offset-4 col-md-7  col-sm-7">
                 <label for="message">Message :</label>
-                <textarea class="form-control" name="message" id="comment" cols="30" rows="8" maxlength="750" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" id="comment" cols="30" rows="8" maxlength="2000" placeholder="Message"></textarea>
             </div>
 
             <div class="form-group col-md-offset-4 col-sm-offset-4 col-md-7  col-sm-7">
